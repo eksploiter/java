@@ -5,5 +5,4 @@ public class HelloJava2 {
         System.out.println("hello java3");
     }
 }
-
 // 프로그램은 main() 을 시작으로 위에서 아래로 한 줄씩 실행된다.
