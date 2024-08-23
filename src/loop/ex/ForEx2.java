@@ -1,6 +1,6 @@
 package loop.ex;
 
-public class FroEx2 {
+public class ForEx2 {
     public static void main(String[] args) {
         int num = 2;
 
