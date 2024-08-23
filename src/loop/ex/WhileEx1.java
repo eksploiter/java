@@ -23,8 +23,8 @@ public class WhileEx1 {
 //        int count = 1;
 //
 //        while (count <= 10) {
-//            System.out.println(i);
-//            i++;
+//            System.out.println(count); // 후위 증감 연산 사용해도 된다. -> System.out.println(count++);
+//            count++;
 //        }
 //    }
 //}

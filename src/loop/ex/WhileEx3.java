@@ -12,9 +12,9 @@ public class WhileEx3 {
         int i = 1;
 
         while (i <= max){
-            sum += i;
+            sum += i; // sum = sum + i;
             i++;
         }
-        System.out.println(sum);
+        System.out.println(sum); // while 문 안으로 넣을 경우 각 숫자의 누적 값이 모두 표시된다.
     }
 }
