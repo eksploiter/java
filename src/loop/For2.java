@@ -9,7 +9,7 @@ public class For2 {
         int endNum = 5;
 
         for (int i = 1; i <= endNum; i++) {
-            sum = sum + i;
+            sum += i; // sum = sum + i;
             System.out.println("i = " + i + " sum = " + sum);
         }
     }
