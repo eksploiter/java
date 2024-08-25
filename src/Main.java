@@ -22,7 +22,7 @@ public class Main {
 //      - 클래스: Person, OrderDetail
 //      - 변수를 포함한 나머지: firstName, userAccount
 // - 여기에 예외가 딱 두 가지 있다.
-//      - 삿수는 모두 대문자를 사용하고 언더바로 구분한다.(상수는 뒤에서 학습)
+//      - 상수는 모두 대문자를 사용하고 언더바로 구분한다.(상수는 뒤에서 학습)
 //          - USER_LIMIT
 //      - 패키지는 모두 소문자를 사용한다. (패키지는 뒤에서 학습)
 //          - org.spring.boot
