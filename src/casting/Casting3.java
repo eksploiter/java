@@ -5,7 +5,7 @@ package casting;
 
 public class Casting3 {
     public static void main(String[] args) {
-        long maxIntValue = 2147483647; // int 최고값
+        long maxIntValue = 2147483647L; // int 최고값 (어차피 int 범위 내에 있으므로 L을 붙여도 되고 안 붙여도 된다.)
         long maxIntOver = 2147483648L; // int 최고값 + 1(초과)
         int intValue = 0;
 
