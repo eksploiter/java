@@ -27,6 +27,7 @@ public class ScannerEx5 {
             num2 = temp;
         }
 
+        System.out.print("두 숫자 사이의 모든 정수: ");
         for (int i = num1; i <= num2; i++) { // * 이 부분 헷갈렸음 *
             System.out.print(i);
             if (i != num2) {
