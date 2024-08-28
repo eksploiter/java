@@ -15,14 +15,16 @@ public class ScannerWhileEx1 {
             System.out.print("이름을 입력하세요 (종료를 입력하면 종료): ");
             String name = scanner.nextLine();
 
-            if (name.equals("종료")) {
+            if (name.equals("종료")) { // String 에는 "==" 이거 안 쓴다!! .equals 기억!
                 System.out.println("프로그램을 종료합니다.");
                 break;
             }
 
             System.out.print("나이를 입력하세요: ");
-            int age = scanner.nextInt();
+            int age = scanner.nextInt(); // 10\n
             scanner.nextLine(); // * 숫자 입력 후의 줄바꿈 처리 * 이 문장을 작성하고 오류가 없어짐
+            // \n를 while 문을 다시 돌기 전에 미리 읽어준다. (쉽게 말해 엔터를 읽고 버려준다.)
+            // 이게 없으면 String name = scanner.nextLine(); 여기서 빈 공백을 입력으로 받아들인다.
 
             System.out.println("입력한 이름: " + name + ", 나이: " + age);
         }

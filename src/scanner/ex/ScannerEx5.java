@@ -22,7 +22,7 @@ public class ScannerEx5 {
 
         if (num1 > num2) {
             int temp;
-            temp = num1;
+            temp = num1;  // int temp = num1;
             num1 = num2;
             num2 = temp;
         }
