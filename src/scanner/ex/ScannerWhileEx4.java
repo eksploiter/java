@@ -15,13 +15,13 @@ public class ScannerWhileEx4 {
             if (option == 1) {
                 scanner.nextLine(); // 이전에 입력된 개행 문자 제거
 
-                System.out.println("상품명을 입력하세요: ");
+                System.out.print("상품명을 입력하세요: ");
                 String product = scanner.nextLine();
 
-                System.out.println("상품의 가격을 입력하세요: ");
+                System.out.print("상품의 가격을 입력하세요: ");
                 int price = scanner.nextInt();
 
-                System.out.println("구매 수량을 입력하세요: ");
+                System.out.print("구매 수량을 입력하세요: ");
                 int quantity = scanner.nextInt();
 
                 totalCost += price * quantity;
