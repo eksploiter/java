@@ -11,7 +11,7 @@ package array;
 
 public class ArrayDi3 {
     public static void main(String[] args) {
-        int[][] arr = {
+        int[][] arr = { // 1차원때와 같이 앞에 new int[][] 생략 가능하다.
                 {1, 2, 3},
                 {4, 5, 6}
         };
