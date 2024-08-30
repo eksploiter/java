@@ -9,7 +9,6 @@ public class ArrayEx1Ref {
         int[] student = {90, 80, 70, 60, 50};
 
         int total = 0;
-        // double average = 0;
         for (int i = 0; i < student.length; i++) {
             total += student[i];
         }
