@@ -1,5 +1,4 @@
 ### Studying Java Programming
-<br>
 
 ## Start
 ### Frist steps in Java with code
