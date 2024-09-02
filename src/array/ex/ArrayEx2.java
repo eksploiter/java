@@ -22,7 +22,8 @@ public class ArrayEx2 {
         for (int i = 0; i < numbers.length; i ++) {
             System.out.print(numbers[i]);
             if (i != numbers.length - 1) {
-                System.out.print(",");
+                // i는 0붙 시작하므로, 이 if 문을사용하지 않을 경우 마지막 숫자 뒤에도 ,가 붙는다.
+                System.out.print(", ");
             }
         }
         scanner.close();

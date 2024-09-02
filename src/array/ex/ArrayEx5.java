@@ -16,12 +16,12 @@ public class ArrayEx5 {
         int total = 0;
 
         System.out.println(a + "개의 정수를 입력하세요: ");
-        for (int i = 0; i < numbers.length; i++) {
+        for (int i = 0; i < numbers.length; i++) { // for (int i = 0; i < a; i++); 로 해도 된다.
             numbers[i] = scanner.nextInt();
             total += numbers[i];
         }
 
-        double average = (double) total / numbers.length;
+        double average = (double) total / numbers.length; // numbers.length 말고 a로 바꿔도 된다.
 
         System.out.println("입력한 정수의 합계: " + total);
         System.out.println("입력한 정수의 평균: " + average);

@@ -19,9 +19,10 @@ public class ArrayEx3 {
         }
 
         System.out.println("입력한 정수를 역순으로 출력: "); // * 너무 어렵게 생각하지 말자 *
+        // 배열의 인덱스를 역순으로 4, 3, 2, 1, 0
         for (int i = 4; i >= 0; i--) {
             System.out.print(numbers[i]);
-            if (i > 0) {
+            if (i > 0) { // 마지막인 0번째를 제외하고 콤마를 붙인다.
                 System.out.print(",");
             }
         }
