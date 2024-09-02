@@ -24,6 +24,7 @@ public class ArrayEx6 {
 
         min = max = numbers[0]; // * 이곳이 헷갈린다. *
         for (int i = 1; i < numbers.length; i++) {
+            // 0번째 배열 항목을 넣어놨으므로 loop 는 1번째부터 시작한다.
             if (numbers[i] < min) {
                 min = numbers[i];
             }

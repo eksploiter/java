@@ -10,17 +10,17 @@ public class ArrayEx7 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[][] scores = new int[4][3];
-        String[] subject = {"국어", "영어", "수학"};
+        String[] subjects = {"국어", "영어", "수학"};
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 4; i++) { // 행
             System.out.println((i+1) + "번 학생의 성적을 입력하세요: ");
-            for (int j = 0; j < 3; j++) {
-                System.out.print(subject[j] + " 점수: ");
+            for (int j = 0; j < 3; j++) { // 열
+                System.out.print(subjects[j] + " 점수: ");
                 scores[i][j] = scanner.nextInt();
             }
         }
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 4; i++) { // 이 loop 한 번당 학생 한 명의 결과
             int total = 0;
             for (int j = 0; j < 3; j++) {
                 total += scores[i][j];

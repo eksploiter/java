@@ -9,8 +9,9 @@ public class ArrayEx8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("학생수를 입력하세요: ");
+        System.out.print("학생수를 입력하세요: "); // ArrayEx7과 다른 곳이다. 나머지는 같다.
         int N = scanner.nextInt();
+
         int[][] score = new int[N][3];
         String[] subject  = {"국어", "영어", "수학"};
 
