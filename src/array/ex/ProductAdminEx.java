@@ -34,9 +34,10 @@ public class ProductAdminEx {
 
         while (true) {
             System.out.println("1, 상품 등록 | 2. 상품 목록 | 3. 종료");
+            // System.out.print(""1, 상품 등록 | 2. 상품 목록 | 3. 종료\n 메뉴를 입력하세요: "); 이렇게 해도 된다.
             System.out.print("메뉴를 선택하세요: ");
             int menu = scanner.nextInt();
-            scanner.nextLine();
+            scanner.nextLine(); // 개행 해줘야 한다.
 
             if (menu == 1) {
                 if (productCount >= maxProducts) {
