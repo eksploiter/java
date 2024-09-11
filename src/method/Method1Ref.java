@@ -11,7 +11,7 @@ package method;
 public class Method1Ref {
     public static void main(String[] args) {
         int sum1 = add(5, 10); // 여기서 a: , b: 이 둘은 인텔리제이에서 자동으로 보여주는 메서드의 변수명이다.
-        // 호출자: 인수, 인자 -> 5, 10
+        // 호출자: 인수, 인자, 아규면트 -> 5, 10
         System.out.println("결과1 출력: " + sum1);
 
         int sum2 = add(15, 20);
