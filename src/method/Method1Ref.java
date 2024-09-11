@@ -10,18 +10,21 @@ package method;
 
 public class Method1Ref {
     public static void main(String[] args) {
-        int sum1 = add(5, 10);
+        int sum1 = add(5, 10); // 여기서 a: , b: 이 둘은 인텔리제이에서 자동으로 보여주는 메서드의 변수명이다.
+        // 호출자: 인수, 인자 -> 5, 10
         System.out.println("결과1 출력: " + sum1);
 
         int sum2 = add(15, 20);
         System.out.println("결과2 출력: " + sum2);
     }
 
-    // 메서드 정의
+    // 메서드 정의 (add 메서드) -> 메서드로 인해 중복을 제거할 수 있다.
     private static int add(int a, int b) {
+        // int(숫자형)을 반환하는 메서드이다.
+        // 여기서 int a, int b 는 매개변수(파라미터)이다.
         System.out.println(a + " + " + b + " 연산 수행");
         int sum = a + b;
-        return sum;
+        return sum; // 숫자형을 반환
         // return = a + b;
     }
 }
