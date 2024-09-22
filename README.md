@@ -9,5 +9,5 @@
 ## javaBasic
 ### Object-Oriented Programming Concept
 - 자바 객체 지향 프로그래밍
-- 객체, 캡슐화, 상속, 다형성, 추상화 
+- 객체, 캡슐화, 상속, 다형성, 추상화
 <br>
