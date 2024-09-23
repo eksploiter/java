@@ -11,3 +11,16 @@
 - 자바 객체 지향 프로그래밍
 - 객체, 캡슐화, 상속, 다형성, 추상화
 <br>
+
+---
+
+## Development Environment
+
+- **Language**: Java
+- **IDE**: IntelliJ IDEA
+
+---
+
+## License
+
+This project is created for educational purposes and is not intended for commercial use.
