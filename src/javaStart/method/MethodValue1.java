@@ -1,20 +1,24 @@
 // 메서드 호출과 값 복사
 // 다음은 숫자를 2배 곱하는 메서드이다. 다음 코드를 보고 어떤 결과가 나올지 먼저 생각해보자.
 
+// * 자바는 항상 변수의 값을 복사해서 대입한다. *
+
 package javaStart.method;
 
 public class MethodValue1 {
     public static void main(String[] args) {
         int num1 = 5;
-        System.out.println("1. changeNumber 호출 전, num1: " + num1);
-        changeNumber(num1);
-        System.out.println("4. changeNumber 호출 후, num1: " + num1);
+        System.out.println("1. changeNumber 호출 전, num1: " + num1); // 1
+        changeNumber(num1); // num1의 5가 복사되어 changeNumber 메서드로 넘어간다.
+
+        System.out.println("4. changeNumber 호출 후, num1: " + num1); // 4
+        // num1이 changeNumber 로 복사되어 넘어갔을 뿐, num1은 여전히 5이다.
     }
 
     public static void changeNumber(int num2) {
-        System.out.println("2. changeNumber 변경 전, num2: " + num2);
+        System.out.println("2. changeNumber 변경 전, num2: " + num2); // 2
         num2 = num2 * 2;
-        System.out.println("3. changeNumber 변경 후, num2: " + num2);
+        System.out.println("3. changeNumber 변경 후, num2: " + num2); // 3
     }
 }
 
@@ -31,7 +35,7 @@ public class MethodValue1 {
 // 자바는 항상 변수의 값을 복사해서 대입한다.
 
 // changeNumber(num1) 호출 시점
-// - num1의 값 5를 일고 복사해서 num2에 전달 -> 이 부분이 핵심
+// - num1의 값 5를 읽고 복사해서 num2에 전달 -> 이 부분이 핵심
 
 // changeNumber 메서드 실행 중
 // - num2의 변경은 num1에 영향을 주지 않는다. 왜냐하면 앞서 값을 복사해서 전달했기 때문이다.
