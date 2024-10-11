@@ -2,19 +2,21 @@
 // 그렇다면 메서드를 사용해서 값을 변경하려면 어떻게 해야할까?
 // 메서드의 호출 결과를 반환 받아서 사용하면 된다.
 
+// * 자바는 항상 변수의 값을 복사해서 대입한다. *
+
 package javaStart.method;
 
 public class MethodValue3 {
     public static void main(String[] args) {
         int num1 = 5;
-        System.out.println("changeNumber 호출 전, num1: " + num1);
-        num1 = changeNumber(num1);
-        System.out.println("changeNumber 호출 후, num1: " + num1);
+        System.out.println("changeNumber 호출 전, num1: " + num1); // 5
+        num1 = changeNumber(num1); // num1 = num2 -> num1 = 10
+        System.out.println("changeNumber 호출 후, num1: " + num1); // 10
     }
 
-    public static int changeNumber(int num2) {
-        num2 = num2 * 2;
-        return num2;
+    public static int changeNumber(int num2) { // num2 = 5
+        num2 = num2 * 2; // 10
+        return num2; // num2 값을 반환
     }
 }
 
