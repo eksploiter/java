@@ -17,11 +17,12 @@ public class MethodReturn1 {
             // 홀수이면 true 를 반환한다.
             return true;
         }
-        return false;
+        return false; // if 문이 아닐 경우에 return (else)
     }
 }
 
 // return false 가 누락된 상황
+
 // 이 코드에서 if 조건이 만족할 때는 true 가 반환되지만, 조건을 만족하지 않으면 어떻게 될까?
 // 조건을 만족하지 않은 경우에는 return 문이 실행되지 않는다.
 // 따라서 이 코드를 실행하면 return 문을 누락했다는 다음과 같은 컴파일 오류가 발생한다.
