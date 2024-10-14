@@ -2,23 +2,25 @@ package javaStart.method.ex;
 
 // * 중간에 헷갈려서 보고 품 *
 
+// 좋은 코드란 이런 코드!
+
 public class MethodEx3Ref {
     public static void main(String[] args) {
         int balance = 10000;
 
-        balance = deposit(balance, 1000);
-        balance = withdraw(balance, 2000);
+        balance = deposit(balance, 1000);   // 입금
+        balance = withdraw(balance, 2000);  // 출금
 
         System.out.println("최종 잔액: " + balance + "원");
     }
 
-    public static int deposit(int balance, int amount) {
+    public static int deposit(int balance, int amount) { // 입금 메서드
         balance += amount;
         System.out.println(amount + "원을 입금하였습니다. 현재 잔액: " + balance + "원");
         return balance;
     }
 
-    public static int withdraw(int balance, int amount) {
+    public static int withdraw(int balance, int amount) { // 출금 메서드
         if (balance >= amount) {
             balance -= amount;
             System.out.println(amount + "원을 출금하였습니다. 현재 잔액: " + balance + "원");
@@ -36,3 +38,6 @@ public class MethodEx3Ref {
 // 이런 리팩토링을 메서드 추출(Extract Method)이라 한다. 메서드를 재사용하는 목적이 아니어도 괜찮다.
 // 메서드를 적절하게 사용해서 분류하면 구조적으로 읽기 쉽고 유지보수 하기 좋은 코드를 만들 수 있다.
 // 그리고 메서드의 이름 덕분에 프로그램을 더 읽기 좋게 만들 수 있다.
+
+// 메서드에서 int 등 반환 타입이 존재하면 return 으로 반환을 해주어야한다.
+// 반면에 void 인 경우에는 반환값이 없으므로 return 이 없다.
