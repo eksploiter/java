@@ -14,7 +14,7 @@ public class MethodEx4My {
         Scanner scanner = new Scanner(System.in);
 
         int balance = 0;
-        int amount = 0;
+        int amount;
 
         while (true) {
             System.out.println("---------------------------------");
