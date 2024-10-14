@@ -3,6 +3,7 @@ package javaStart.method.ex;
 // * 중간에 헷갈려서 보고 품 *
 
 // 좋은 코드란 이런 코드!
+// 비즈니스 의도가 잘 보이는 것!
 
 public class MethodEx3Ref {
     public static void main(String[] args) {
