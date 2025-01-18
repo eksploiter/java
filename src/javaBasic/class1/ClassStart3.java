@@ -8,7 +8,7 @@ public class ClassStart3 {
         Student student1;
         student1 = new Student(); // 학생을 실제 메모리에 만든다. -> 붕어빵
         // x001 (예시 값)
-        student1.name = "학생1"; // 클래스에서는 .을 통해서 접근할 수 있다.
+        student1.name = "학생1"; // 클래스에서는 .을 통해서 접근할 수 있다. 이를 통해 객체를 사용한다.
         student1.age = 15;
         student1.score = 90;
 
@@ -51,4 +51,7 @@ public class ClassStart3 {
 // Student student1 = x001; // 2. new Student()의 결과로 x001 참조값 반환
 // student1 = x001; // 3. 최종 결과
 
-//
+// 객체에 값 대입
+// 객체가 가지고 있는 멤버 변수(name, age, grade)에 값을 대입하려면 먼저 객체에 접근해야 한다.
+// 객체에 접근하려면 .(점, dot)키워드를 사용하면 된다.
+// 이 키워드는 변수(student1)에 들어있는 참조값(x001)을 읽어서 메모리에 존재라는 객체에 접근한다.
