@@ -13,7 +13,7 @@ public class MethodChange2 {
         System.out.println("메서드 호출 후: dataA.value = " + dataA.value);
     }
     static void changeReference(Data dataX) {
-        dataX.value = 20;
+        dataX.value = 20; // 참조값(주소)전달
     }
 }
 

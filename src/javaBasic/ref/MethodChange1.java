@@ -23,6 +23,6 @@ public class MethodChange1 {
         System.out.println("메서드 호출 후: a = " + a);
     }
     static void changePrimitive(int x) {
-        x = 20;
+        x = 20; // 값을 return 하지 않는 이상 a의 값이 변할 일은 없다.
     }
 }
