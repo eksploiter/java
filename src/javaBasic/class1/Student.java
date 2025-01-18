@@ -5,7 +5,7 @@
 
 package javaBasic.class1;
 
-public class Student {
+public class Student { // 이거는 붕어빵 틀!
     String name;
     int age;
     int score;
@@ -13,8 +13,8 @@ public class Student {
 
 // class 키워드를 사용해서 학생 클래스(Student)를 정의한다. 학새 클래스는 내부에 이름(name), 나이(age), 성적(score) 변수를 가진다.
 
-// 이렇게 클래스에 정의한 변수들을 멤버변수, 또는 필드라 한다.
-// - 멤버변수(Member Variable): 이 변수들은 특정 클래스에 소속된 멤버이기 때문에 이렇게 부른다.
+// 이렇게 클래스에 정의한 변수들을 멤버변수, 또는 필드라 한다. -> 이제 우리 프로그램에서는 학생이라는 정보를 사용할 수 있다.
+// - 멤버변수(Member Variable): 이 변수들은 특정 클래스에 소속된 "멤버"이기 때문에 이렇게 부른다.
 // - 필드(Field): 데이터 항목을 가리키는 전통적인 용어이다. 데이터베이스, 엑셀 등에서 데이터 각각의 항목을 필드라 한다.
 // - 자바의 멤버변수, 필드는 같은 뜻이다. 클래스에 소속된 변수를 뜻한다.
 
