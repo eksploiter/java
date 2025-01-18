@@ -19,9 +19,32 @@
 // 쉽게 이야기 해서 실제 건물 복사가 아니라 건물의 위치인 주소만 복사되는 것이다.
 // 따라서 같은 건물을 찾아갈 수 있는 방법이 하나 늘어날 뿐이다.
 
-// 구체적인 예시를 통해
+// 구체적인 예시를 통해서 변수 대입시 기본형과 참조형의 차이를 알아보자
+
+/// 기본형과 변수 대입
+// 다음 코드를 보고 어떤 결과가 나올지 먼저 생각해보자.
+// 너무 쉽고 당연한 내용이지만, 이후 나올 참조형과 비교를 위해서 다시 한번 정리해보자.
 
 package javaBasic.ref;
 
 public class VarChange1 {
+
+    public static void main(String[] args) {
+        int a = 10;
+        int b = a;
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+
+        // a 변경
+        a = 20;
+        System.out.println("변경 a = 20");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+
+        // b 변경
+        b = 30;
+        System.out.println("변경 b = 30");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+    }
 }
