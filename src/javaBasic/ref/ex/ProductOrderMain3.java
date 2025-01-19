@@ -11,7 +11,7 @@ public class ProductOrderMain3 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("입력할 주문의 개수를 입력하세요: ");
         int N = scanner.nextInt();
-        scanner.nextLine();
+        scanner.nextLine(); // 입력 버퍼를 비우릭 위한 코드
 
         ProductOrder[] orders = new ProductOrder[N];
 
@@ -27,13 +27,13 @@ public class ProductOrderMain3 {
             System.out.print("수량: ");
             int quantity = scanner.nextInt();
 
-            scanner.nextLine();
+            scanner.nextLine(); // 입력 버퍼를 비우시 위한 코드
             orders[i] = createOrder(productName, price, quantity);
         }
 
         printOrders(orders);
         int totalAmount = getTotalAmount(orders);
-        System.out.println("총 결제 금액: " + totalAmount);
+        System.out.println("총 결제 금액: " + totalAmount); 
 
         scanner.close();
     }
