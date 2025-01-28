@@ -12,6 +12,14 @@ public class MemberConstruct {
     int age;
     int grade;
 
+    // 추가
+    MemberConstruct(String name, int age) {
+        this(name, age, 50); // 중복 제거
+        // 아래의 생성자로 값을 넘긴다.
+    }
+    // 기존 MemberConstruct 에 생성자를 하나 추가해서 생성자가 2개가 되었다.
+    // 생성자 오버로딩
+
     MemberConstruct(String name, int age, int grade) {
         System.out.println("생성자 호출 name = " + name + ", age = " + age + ", grade = " + grade);
         this.name = name;
@@ -36,3 +44,10 @@ public class MemberConstruct {
 // 생성지를 사용하면 필수값 입력을 보장할 수 있다.
 
 // 좋은 프로그램은 무한한 자유도가 주어지는 프로그램이 아니라 적절한 제약이 있는 프로그램이다.
+
+// 이때 this() 라는 기능을 사용하면 생성자 내부에서 자신의 생성자를 호출할 수 있다.
+// 참고로 this 는 인스턴스 자신의 참조값을 가리킨다, 그래서 자신의 생성자를 호출한다고 생각하면 된다.
+// 이 코드는 첫번째 생성자 내부에거 두번째 생성자를 호출한다.
+
+// this() 규칙
+// - this() 는 생성자 코드의 첫줄에만 작성할 수 있다.
