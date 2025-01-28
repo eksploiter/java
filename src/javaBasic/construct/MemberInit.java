@@ -12,7 +12,14 @@ public class MemberInit {
     // 추가
     void initMember(String name, int age, int grade) {
         this.name = name;
-        this.age = grade;
+        this.age = age;
         this.grade = grade;
     }
 }
+
+// this 란? 자기자신의 인스턴스의 참조
+
+// 진행과정
+// this.name = name; // 1. 오른쪽의 name 매개변수에 접근
+// this.name = "user"; // 2. name 매개변수의 값 사용
+// x001.name = "user"; // 3. this.은 인스턴스 자신의 참조값을 뜻함, 따라서 인스턴스의 멤버변수에 접근

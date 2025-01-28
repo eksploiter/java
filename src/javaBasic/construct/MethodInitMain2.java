@@ -40,5 +40,5 @@ public class MethodInitMain2 {
         member.name = name;
         member.age = age;
         member.grade = grade;
-    }
+    } // 객체지향에 걸맞지 않는다.
 }
