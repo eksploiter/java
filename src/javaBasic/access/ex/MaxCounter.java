@@ -9,12 +9,15 @@ public class MaxCounter {
     }
 
     public void increment() {
-        if (max > count) {
-            count++;
-        } else {
-            System.out.println("최대값을 초과할 수 없습니다.");
+        // 검증 로직
+        if (count >= max) {
+            System.out.println("최댓값을 초과할 수 없습니다.");
+            return;
         }
+        // 실행 로직
+        count++;
     }
+    // if - else 방식도 가능하나 return 으로 날리는게 더 장점이 있다. -> 명확성
 
     public int getCount(){
         return count;
